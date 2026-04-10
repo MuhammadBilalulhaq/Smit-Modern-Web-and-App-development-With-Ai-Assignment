@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form method="post" style="width: 500px">
+        <fieldset>
+            <legend ><b>Bio Data</b></legend>
+            <label for="Name">User Name:</label>
+            <input id="Name" type="text" name="User name" placeholder="Enter your name" required><br><br>
+            <label for="password">Password:</label>
+            <input id="password" type="password" placeholder="Enter you password" name="password" required minlength="5" maxlength="10"><br><br>
+            <label for="dob">Date Of Birth:</label>
+            <input id="dob" type="date" placeholder="Enter Your Date of Birth" name="Date of birth" required><br><br>
+            <label for="profile-pic">Profile Picture:</label>
+            <input id="profile-pic" type="file" name="Profile picture" accept="image/*"><br><br>
+            <label for="gender">Gender</label>
+            <input id="gender" type="radio" name="Gender" value="Male">
+            <label for="gender">Male</label>
+            <input id="gender" type="radio" name="Gender" value="Female">
+            <label for="gender">Female</label><br>><br>
+            <label for="nationality">Nationality</label>
+            <select id="nationality" name="Nationality">
+                <option selected disabled value="Pakistani">Pakistani</option>
+                <option value="Usa">Usa</option>
+                <option value="India">India</option>
+                <option value="China">China</option>
+                <option value="Uk">Uk</option>
+            </select><br><br>
+            <label for="city">City</label>
+            <select name="City" id="city">
+                <option selected disabled value="">Select a city</option>
+                <option value="Karachi">Karachi</option>
+                <option value="Lahore">Lahore</option>
+                <option value="Islamabad">Islamabad</option>
+            </select><br><br>
+        </fieldset>
+        <fieldset>
+            <legend><b>Professional Experience</b></legend>
+                <label for="experience">Total Professional Experience:</label>
+                <input id="experience" type="number" name="Professional experience" placeholder="Enter your experience in years" min="5" step="0.1"><br><br>
+                <label for="qualification">Qualification:</label>
+                <select name="Qualification" id="qualification">
+                    <option value="">Select a qualification</option>
+                    <option value="matric">Matric</option>
+                    <option value="inter">Inter</option>
+                    <option value="bachelors">Bachelors</option>
+                    <option value="masters">Masters</option>
+                </select>
+        </fieldset>
+        <fieldset>
+            <legend>Other Details</legend>
+            <label for="favourite-subject">Favourite Subject:</label>
+            <select name="Favourite subject" id="favourite-subject">
+                <option selected disabled value="">Select a subject</option>
+                <option selected disabled value="mathematics">Mathematics</option>
+                <option value="physics">Physics</option>
+                <option value="chemistry">Chemistry</option>
+                <option value="biology">Biology</option>
+            </select>
+        </fieldset>
+        <input style="color:red;" type="submit">
+    </form>
+</body>
+</html>
