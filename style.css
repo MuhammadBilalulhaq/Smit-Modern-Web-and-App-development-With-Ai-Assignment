@@ -1,0 +1,122 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+  position: relative; /* needed for absolute centering trick */
+}
+
+.nav-links {
+  position: absolute;       /* pull it out of normal flow */
+  left: 50%;                /* move to center of navbar */
+  transform: translateX(-50%); /* shift back by half its own width */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+
+}
+.nav-links a:hover{
+  color: #00bcd4;
+}
+
+
+
+.avatar img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+
+.Logo img {
+  width: 50px;
+  height: 50px;
+}
+.banner {
+  background-image: url("./Assets/banner\ image.avif");
+  height: 400px;
+  padding: 10px;
+  margin-top: 10px;
+  background-size: cover;
+  background-position: center;
+
+  text-align: center;
+  color: white;
+
+  padding-top: 150px; /* simple centering (no flexbox needed) */
+}
+.content {
+  padding: 20px;
+  color: crimson;
+}
+.table-container {
+     width: 80%;
+    margin: 40px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+.table-container {
+    width: 80%;
+    margin: 40px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background: linear-gradient(45deg, #4facfe, #00f2fe);
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+td {
+    padding: 12px;
+}
+
+tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+tr:hover {
+    background: #eaf4ff;
+    transition: 0.3s;
+}
+
+button {
+    background: #4facfe;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #007bff;
+}
+form{
+    width: 50%;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
