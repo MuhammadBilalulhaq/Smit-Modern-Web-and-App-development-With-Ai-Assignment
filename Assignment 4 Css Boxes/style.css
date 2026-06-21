@@ -1,0 +1,61 @@
+.navbar {
+  background-color: #333;
+  padding: 10px;
+  overflow: hidden; /* fixes float issues */
+}
+
+.nav-links {
+  list-style: none;
+  text-align: center; /* center links */
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  display: inline-block; /* puts links in one line */
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+.nav-links a:hover{
+  color: #00bcd4;
+}
+
+.avatar {
+  float: right; /* moves avatar to right */
+}
+
+.avatar img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.Logo {
+  float: left; /* moves logo to left */
+}
+
+.Logo img {
+  width: 100px;
+  height: 100px;
+}
+.banner {
+  background-image: url("./Assets/banner\ image.avif");
+  height: 400px;
+  padding: 10px;
+  margin-top: 10px;
+  background-size: cover;
+  background-position: center;
+
+  text-align: center;
+  color: white;
+
+  padding-top: 150px; /* simple centering (no flexbox needed) */
+}
+.content {
+  padding: 20px;
+  color: crimson;
+}
